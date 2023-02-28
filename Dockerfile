@@ -6,3 +6,4 @@ RUN echo "安装git" \
     && apt-get update \
     && apt-get install git -y
 USER 50000
+RUN pip install apache-airflow-providers-apache-hive
