@@ -6,4 +6,4 @@ RUN echo "安装git" \
     && apt-get update \
     && apt-get install git -y
 USER airflow
-RUN pip install --no-cache-dir apache-airflow-providers-apache-hive -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN pip install --no-cache-dir apache-airflow-providers-apache-hive
