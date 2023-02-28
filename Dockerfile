@@ -5,5 +5,5 @@ RUN echo "安装git" \
     && sudo sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list \
     && apt-get update \
     && apt-get install git -y
-RUN pip install --no-cache-dir apache-airflow-providers-apache-hive
 USER airflow
+RUN pip install --no-cache-dir apache-airflow-providers-apache-hive
